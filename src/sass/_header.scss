@@ -1,0 +1,33 @@
+menu{
+    border-bottom: 1px solid #006238;
+    nav{
+        width: 70%;
+        margin-inline: auto;
+    }
+    ul{
+        padding: 1rem;
+        display: $flexBox;
+        list-style-type: none;
+        align-items: $align;
+        justify-content: $spaceBetween;
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+        li:first-child > .logo{
+            display: $flexBox;
+            align-items: $align;
+            gap: 0.2rem;
+            cursor: $cursorPointer;
+        }
+        span{
+            font-size: 3rem;
+            color: $greenColor;
+        }
+        li:last-child{
+            img{
+                cursor: $cursorPointer;
+            }
+        }
+    }
+}

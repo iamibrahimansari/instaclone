@@ -1,0 +1,46 @@
+.form{
+    border: 1px solid #aaa;
+    width: 30%;
+    margin: 5rem auto;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    div{
+        display: flex;
+        justify-content: space-between;
+        &:first-child{
+            input{
+                width: 90%;
+            }
+        }
+        &:nth-child(2){
+            input{
+                width: 30%;
+            }
+        }
+        &:nth-child(3){
+            input{
+                width: 100%;
+            }
+        }
+        &:last-child{
+            button{
+                margin: auto;
+            }
+        }
+        input{
+            padding: 0.5rem 1rem;
+        }
+        button{
+            padding: 0.5rem 2rem;
+        }
+
+        input, button{
+            border: none;
+            outline: none;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.landing-page{
+    display: $flexBox;
+    overflow: hidden;
+    height: 100vh;
+    &__img-container,
+    &__intro-container{
+        width: 50%;
+    }
+
+    &__img{
+        width: $hundredPercent;
+        height: $hundredPercent;
+    }
+
+    &__intro-container{
+        display: $flexBox;
+        flex-direction: $flexDirection;
+        justify-content: $align;
+        align-items: $align;
+        h1{
+            text-align: $align;
+            color: $greenColor;
+            span{
+                font-size: 5rem;
+                display: block;
+            }
+            button{
+                padding: 1rem 2rem;
+                border: 3px solid $greenColor;
+                font-size: 1.6rem;
+                border-radius: 1rem;
+                cursor: $cursorPointer;
+                .link{
+                    color: $greenColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
