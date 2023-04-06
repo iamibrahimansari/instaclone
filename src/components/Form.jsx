@@ -14,7 +14,7 @@ const Form = () =>{
     const handleOnSubmit = async event =>{
         event.preventDefault();
         const {author, location, description, likes, date} = formData;
-        await fetch('http://instaclone-api.onrender.com/user', {
+        await fetch('https://instaclone-api-11x1.onrender.com/user', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

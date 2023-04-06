@@ -39,7 +39,7 @@ const SinglePost = ({image, author, location, desc, likes, date}) =>{
 const PostView = () =>{
     const [data, setData] = useState([]);
     const getData = async () =>{
-        const res = await fetch('http://instaclone-api.onrender.com/user', {method: 'GET'});
+        const res = await fetch('https://instaclone-api-11x1.onrender.com/user', {method: 'GET'});
         const temp = await res.json();
         setData(temp.reverse());
     }
